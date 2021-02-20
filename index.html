@@ -55,7 +55,7 @@
     let service;
     let infoPane;
     let palabra_clave = "teatro";
-    let radio = 1000;
+    let radio = 10000;
     function initMap() {
       // Initialize variables
       bounds = new google.maps.LatLngBounds();
@@ -114,8 +114,9 @@
 
     // Handle a geolocation error
     function handleLocationError(browserHasGeolocation, infoWindow) {
-      // Set default location to Sydney, Australia
-      pos = { lat: -33.856, lng: 151.215 };
+      // Set default location to Bogotá, Colombia
+     
+      pos = { lat: 4.6460229, lng: -74.0704318 };
       map = new google.maps.Map(document.getElementById('map'), {
         center: pos,
         zoom: 15
